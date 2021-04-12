@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="47960" started-at="2021-04-12T16:04:17Z" finished-at="2021-04-12T16:05:05Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="47960" started-at="2021-04-12T16:04:17Z" finished-at="2021-04-12T16:05:05Z">
+      <class name="com.java.git.UFTDeveloperTest">
+        <test-method status="PASS" signature="baseBeforeSuite()[pri:0, instance:com.java.git.UFTDeveloperTest@d041cf]" name="baseBeforeSuite" is-config="true" duration-ms="42405" started-at="2021-04-12T21:33:35Z" finished-at="2021-04-12T21:34:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeSuite -->
+        <test-method status="PASS" signature="baseBeforeClass(org.testng.ITestContext)[pri:0, instance:com.java.git.UFTDeveloperTest@d041cf]" name="baseBeforeClass" is-config="true" duration-ms="2" started-at="2021-04-12T21:34:17Z" finished-at="2021-04-12T21:34:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4b213651]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeClass -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.java.git.UFTDeveloperTest@d041cf]" name="beforeClass" is-config="true" duration-ms="1" started-at="2021-04-12T21:34:17Z" finished-at="2021-04-12T21:34:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="baseBeforeMethod([Ljava.lang.Object;, org.testng.ITestContext, java.lang.reflect.Method)[pri:0, instance:com.java.git.UFTDeveloperTest@d041cf]" name="baseBeforeMethod" is-config="true" duration-ms="1" started-at="2021-04-12T21:34:17Z" finished-at="2021-04-12T21:34:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@4241e0f4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@4b213651]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void com.java.git.UFTDeveloperTest.test() throws com.hp.lft.sdk.GeneralLeanFtException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.java.git.UFTDeveloperTest@d041cf]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-04-12T21:34:17Z" finished-at="2021-04-12T21:34:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test()[pri:0, instance:com.java.git.UFTDeveloperTest@d041cf]" name="test" duration-ms="47926" started-at="2021-04-12T21:34:17Z" finished-at="2021-04-12T21:35:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.java.git.UFTDeveloperTest@d041cf]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-04-12T21:35:05Z" finished-at="2021-04-12T21:35:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="baseAfterMethod(org.testng.ITestResult)[pri:0, instance:com.java.git.UFTDeveloperTest@d041cf]" name="baseAfterMethod" is-config="true" duration-ms="1" started-at="2021-04-12T21:35:05Z" finished-at="2021-04-12T21:35:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test status=SUCCESS method=UFTDeveloperTest.test()[pri:0, instance:com.java.git.UFTDeveloperTest@d041cf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterMethod -->
+        <test-method status="PASS" signature="baseAfterClass(org.testng.ITestContext)[pri:0, instance:com.java.git.UFTDeveloperTest@d041cf]" name="baseAfterClass" is-config="true" duration-ms="1" started-at="2021-04-12T21:35:05Z" finished-at="2021-04-12T21:35:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4b213651]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterClass -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.java.git.UFTDeveloperTest@d041cf]" name="afterClass" is-config="true" duration-ms="0" started-at="2021-04-12T21:35:05Z" finished-at="2021-04-12T21:35:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="baseAfterSuite()[pri:0, instance:com.java.git.UFTDeveloperTest@d041cf]" name="baseAfterSuite" is-config="true" duration-ms="7614" started-at="2021-04-12T21:35:05Z" finished-at="2021-04-12T21:35:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterSuite -->
+      </class> <!-- com.java.git.UFTDeveloperTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
