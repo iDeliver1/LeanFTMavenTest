@@ -1,1 +1,1 @@
-mvn clean install -U
+mvn  test -Dsurefire.suiteXmlFiles=testng.xml
