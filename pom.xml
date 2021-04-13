@@ -15,17 +15,17 @@
             <version>6.8</version>
         </dependency>
 
-       <dependency>
-           <groupId>com.hp.lft</groupId>
- <artifactId>sdk</artifactId>
- <version>15.2.0</version>
-       </dependency>  
+	       <dependency>
+	           <groupId>com.hp.lft</groupId>
+	 <artifactId>sdk</artifactId>
+	 <version>15.2.0</version>
+	       </dependency>  
 
-       <dependency>
-            <groupId>com.hp.lft</groupId>
- <artifactId>report</artifactId>
- <version>15.2.0</version>
-       </dependency>
+	       <dependency>
+	            <groupId>com.hp.lft</groupId>
+	 <artifactId>report</artifactId>
+	 <version>15.2.0</version>
+	       </dependency>
 
        <dependency>
            <groupId>com.hp.lft</groupId>
@@ -39,59 +39,20 @@
  <version>15.2.0</version>
        </dependency>
 
-        <dependency>
-            <groupId>com.hp.lft</groupId>
-            <artifactId>report</artifactId>
-            <version>15.2.0</version>
-        </dependency>
 
-        <dependency>
-            <groupId>com.hp.lft</groupId>
-            <artifactId>unittesting</artifactId>
-            <version>15.2.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.hp.lft</groupId>
-            <artifactId>verifications</artifactId>
-            <version>15.2.0</version>
-        </dependency>
+        
     </dependencies>
 
-    <repositories>
-    <!--<repository>
-            <id>Your repository's ID</id>
-            <name>Your repository's name</name>
-            <url>URL of the repository containing the UFT Developer jar files</url>
-        </repository>-->
-    </repositories>
+    
 
     <properties>
-        <test.src.dir>src/test/java</test.src.dir>
+        <test.src.dir>src/main/java</test.src.dir>
     </properties>
 
     <build>
         <testSourceDirectory>${test.src.dir}</testSourceDirectory>
 		
         <plugins>
-			<!--Uncomment this section if you want to use the application model generator plugin-->
-            <!--For details, see https://admhelp.microfocus.com/uftdev/en/latest/HelpCenter/Content/HowTo/update-appModel.htm#hp-minitoc-item-3-->
-            <!--<plugin>-->
-                <!--<groupId>com.hpe.lft</groupId>-->
-                <!--<artifactId>appmodel-generator-mojo</artifactId>-->
-                <!--<version>15.2.0</version>-->
-                <!--<executions>-->
-                    <!--<execution>-->
-                        <!--<phase>validate</phase>-->
-                        <!--<goals>-->
-                            <!--<goal>generate</goal>-->
-                        <!--</goals>-->
-                    <!--</execution>-->
-					<!--<configuration>-->
-                    <!--</configuration>-->
-                <!--</executions>-->
-            <!--</plugin>-->
-			
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -106,72 +67,19 @@
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>2.19.1</version>
                     <configuration>
-               
                           <suiteXmlFiles>
                                  <suiteXmlFile>TestNg.xml</suiteXmlFile>
                           </suiteXmlFiles>
                            <!-- Build with '-DskipTests=true' to bypass test execution @ build time Default: false -->
-                          <skipTests>${skipTests}</skipTests>
+                        
                           <testFailureIgnore>true</testFailureIgnore>
                  </configuration>
              </plugin>
              
             
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>build-helper-maven-plugin</artifactId>
-                <version>1.10</version>
-                <executions>
-                    <execution>
-                        <id>add-source</id>
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>add-source</goal>
-                        </goals>
-                        <configuration>
-                            <sources>
-                                <source>appmodels</source>
-                            </sources>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
+            
         </plugins>
-        <pluginManagement>
-        	<plugins>
-        		<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
-        		<plugin>
-        			<groupId>org.eclipse.m2e</groupId>
-        			<artifactId>lifecycle-mapping</artifactId>
-        			<version>1.0.0</version>
-        			<configuration>
-        				<lifecycleMappingMetadata>
-        					<pluginExecutions>
-        						<pluginExecution>
-        							<pluginExecutionFilter>
-        								<groupId>
-        									org.codehaus.mojo
-        								</groupId>
-        								<artifactId>
-        									build-helper-maven-plugin
-        								</artifactId>
-        								<versionRange>
-        									[1.10,)
-        								</versionRange>
-        								<goals>
-        									<goal>add-source</goal>
-        								</goals>
-        							</pluginExecutionFilter>
-        							<action>
-        								<ignore></ignore>
-        							</action>
-        						</pluginExecution>
-        					</pluginExecutions>
-        				</lifecycleMappingMetadata>
-        			</configuration>
-        		</plugin>
-        	</plugins>
-        </pluginManagement>
+      
     </build>
 	
 	<profiles>
